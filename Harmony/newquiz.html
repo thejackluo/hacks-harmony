@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Harmony Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+
+            <a href="index.html"><img src="logo.png" height=100% ></a>
+
+        <h1 style="left: 3.5em; font-size: 20px !important;"><a href="index.html">Harmony</a></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chatbot.html">ChatBot</a></li>
+            <li><a href="race.html">Racism</a></li>
+            <li><a href="gender.html">Gender</a></li>
+            <li><a href="disable.html">Disabilities</a></li>
+            <li><a href="sexuality.html">LGBT</a></li>
+            <li><a href="environment.html">Climate</a></li>
+            <li><a href="newquiz.html">Resources</a></li>
+          </ul>
+        </nav>
+      </header>
+			<style>
+			.input{
+				width: 20px;
+				height: 20px;
+
+			}
+
+			.question{
+			  font-size: 30px;
+			  margin-bottom: 10px;
+			}
+
+			.answers {
+				margin-bottom: 20px;
+				text-align: left;
+				display: inline-block;
+			}
+			.answers label{
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			button:hover{
+			    background-color: #38a;
+			}
+
+			.slide{
+			  position: absolute;
+			  left: 0px;
+			  top: 0px;
+			  width: 100%;
+			  z-index: 1;
+			  opacity: 0;
+			  transition: opacity 0.5s;
+			}
+			.active-slide{
+			  opacity: 1;
+			  z-index: 2;
+			}
+			.quiz-container{
+			  position: relative;
+			  height: 200px;
+			  margin-top: 40px;
+			}
+
+			h1{
+			  font-weight: 300;
+			  margin-bottom: -10px;
+			  padding: 10px;
+			  font-size: 40px;
+			  color: #444;
+			}
+
+			.slide{
+			  position: absolute;
+			  left: 0px;
+			  top: 0px;
+			  width: 100%;
+			  z-index: 1;
+			  opacity: 0;
+			  transition: opacity 0.5s;
+			}
+			.active-slide{
+			  opacity: 1;
+			  z-index: 2;
+			}
+			.quiz-container{
+			  position: relative;
+			  height: 200px;
+			  margin-top: 40px;
+			}
+
+			label {
+				margin-bottom: 20px;
+
+			}
+			</style>
+
+
+
+			<section id="one" class="main style3 dark fullscreen">
+				<div class="content box style2">
+					<h1>Quiz on Important Facts</h1>
+					<div class="quiz-container">
+					  <div id="quiz"></div>
+					</div>
+					<button id="previous">Previous Question</button>
+					<button id="next">Next Question</button>
+					<button id="submit">Submit Quiz</button>
+					<div id="results"></div>
+					<script src="quiz.js"></script>
+				</div>
+				<a href="#captureme1" class="button style2 down anchored">Next</a>
+			</section>
+
+			<section id="captureme1" style="display: none;">
+				<section class="main style3" style="padding: 0px;">
+					<header style="display: block; margin: auto;">
+						<h2>Your Customized Lesson Plan</h2>
+						<p>Base on your results, You seen to need some support, here are some good videos for that</p>
+					</header>
+				</section>
+				<section class="main style3" style="padding: 0px;" >
+					<div class="video-layout" style="display: block; width: 100%;">
+							<div class="video-layout-block" style="display: inline-block;">
+								<h3>Lesson 1</h3>
+								<iframe width="280" height="163" src="https://www.youtube.com/embed/umQKkcBPL08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>How to succeed in Interviews</p>
+							</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 2</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/usaLP6e6FXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>How to accept yourself</p>
+								</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 3</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/F3jGGaHOHoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>Explode your potential with passion</p>
+								</div>
+					</div>
+				</section>
+			</section>
+
+			<section id="captureme2" style="display: none;">
+				<section class="main style3" style="padding: 0px;">
+					<header style="display: block; margin: auto;">
+						<h2>Your Customized Lesson Plan</h2>
+						<p>Base on your results, you seens to be ok, but those videos will help</p>
+					</header>
+				</section>
+				<section class="main style3" style="padding: 0px;" >
+					<div class="video-layout" style="display: block; width: 100%;">
+							<div class="video-layout-block" style="display: inline-block;">
+								<h3>Lesson 1</h3>
+								<iframe width="280" height="163" src="https://www.youtube.com/embed/q4cjNYGUaoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>Elon Musk's good practices</p>
+							</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 2</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/AY_S7n3jkkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>Environment Motivation Speech</p>
+								</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 3</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/r9DDE7NV1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>50 years of racism</p>
+								</div>
+					</div>
+				</section>
+			</section>
+
+			<section id="captureme3" style="display: none;">
+				<section class="main style3" style="padding: 0px;">
+					<header style="display: block; margin: auto;">
+						<h2>Your Customized Lesson Plan</h2>
+						<p>Base on your results, you are a fairly good person, try to watch those videos below to help others and learn at the same time</p>
+					</header>
+				</section>
+				<section class="main style3" style="padding: 0px;" >
+					<div class="video-layout" style="display: block; width: 100%;">
+							<div class="video-layout-block" style="display: inline-block;">
+								<h3>Lesson 1</h3>
+								<iframe width="280" height="163" src="https://www.youtube.com/embed/78nsxRxbf4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>How to be happy</p>
+							</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 2</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/xrLw94oC6D0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>Smarter every day</p>
+								</div>
+								<div class="video-layout-block" style="display: inline-block;">
+									<h3>Lesson 3</h3>
+									<iframe width="280" height="163" src="https://www.youtube.com/embed/s_fWEqYIYx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<p>Good Music to listen to and spread</p>
+								</div>
+					</div>
+				</section>
+			</section>
+
+	<section id="captureme4" style="display: none;">
+		<section class="main style3" style="padding: 0px;">
+			<header style="display: block; margin: auto;">
+				<h2>Your Customized Lesson Plan</h2>
+				<p>Base on your results, you seen very happy, no videos needed to watch. :)</p>
+			</header>
+		</section>
+
+	</section>
+
+
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Harmony</li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
